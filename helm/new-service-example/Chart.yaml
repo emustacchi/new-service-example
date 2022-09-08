@@ -1,0 +1,9 @@
+apiVersion: v2
+type: application
+dependencies:
+  - name: apollo-charts
+    version: 0.1.0
+    repository: "https://artifactory.cyren.io/releases-helm"
+appVersion: 1.0.0
+name: new-service-example
+version: 0.1.0

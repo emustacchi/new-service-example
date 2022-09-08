@@ -1,0 +1,29 @@
+replicaCount: 2
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 100Mi
+  requests:
+    cpu: 100m
+    memory: 50Mi
+
+env:
+  ENV: dev
+  BANANA: banana
+
+serviceAccount:
+  enabled: true
+
+jaeger:
+  enabled: false
+
+livenessProbe:
+  exec:
+    command:
+      - /bin/true
+
+readinessProbe:
+  exec:
+    command:
+      - /bin/true
